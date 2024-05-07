@@ -11,7 +11,7 @@ const Modal = ({ isOpen, close, children }) => {
 					className='close-button'
 					onClick={close}
 				>
-					Close
+					Cerrar
 				</button>
 			</div>
 		</div>

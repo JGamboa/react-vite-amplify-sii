@@ -15,6 +15,7 @@ const client = generateClient();
 import { deleteCompany } from '@ui-components/graphql/mutations';
 import { generateClient } from 'aws-amplify/api';
 import type { Schema } from '../amplify/data/resource.ts';
+import { CompanyFormOverrides } from './CompanyFormOverrides.ts';
 
 type Props = {
 	isPassedToWithAuthenticator: boolean;
@@ -67,6 +68,7 @@ function App({ isPassedToWithAuthenticator, signOut, user }: Props) {
 						company={currentCompany}
 						onSuccess={handleCloseModal}
 						onValidate={CompanyCreateFormValidations}
+						overrides={CompanyFormOverrides}
 					/>
 				) : (
 					<CompanyCreateForm
@@ -74,6 +76,7 @@ function App({ isPassedToWithAuthenticator, signOut, user }: Props) {
 							handleCloseModal();
 						}}
 						onValidate={CompanyCreateFormValidations}
+						overrides={CompanyFormOverrides}
 					/>
 				)}
 			</Modal>
