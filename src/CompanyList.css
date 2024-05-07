@@ -1,0 +1,84 @@
+
+/* Table Styles */
+.table-container {
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #606060;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Buttons and Input Styles */
+.button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #5c67f2;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Prevents the button text from wrapping */
+    overflow: hidden; /* Keeps the text within the button */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+    flex: 1; /* Allows button and input to expand and take available space */
+    width: 300px;
+}
+
+.button:hover {
+    background-color: #4a54e1;
+}
+
+.button-light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.button-light:hover {
+    background-color: #e2e2e2;
+}
+
+.search-input {
+    background: #FFF;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: calc(100% - 300px);
+}
+
+.search-input:focus {
+    border-color: #5c67f2;
+}
+
+/* Flex container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
