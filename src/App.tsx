@@ -72,9 +72,7 @@ function App({ isPassedToWithAuthenticator, signOut, user }: Props) {
 					/>
 				) : (
 					<CompanyCreateForm
-						onSuccess={() => {
-							handleCloseModal();
-						}}
+						onSuccess={handleCloseModal}
 						onValidate={CompanyCreateFormValidations}
 						overrides={CompanyFormOverrides}
 					/>
